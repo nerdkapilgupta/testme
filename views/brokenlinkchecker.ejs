@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%=title%></title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+  </head>
+<div class="container">
+    <h1 class="text-center">
+      Broken Link Checker
+    </h1>
+    <form action="/brokenlinkchecker" method="post">
+      <div class="form-group">
+        <label for="url">Website URL:</label>
+        <input class="form-control" type="text" name="url" id="" placeholder="URL of Website" required>
+      </div>
+      <div class="form-group">
+        <button class="btn btn-block btn-danger">
+          Get Broken Links
+        </button>
+      </div>
+      <div class="form-group">
+      <label for="links">Broken Links:</label>
+      <textarea class="form-control" id="" cols="30" rows="10" placeholder="Broken Links"><%=info%></textarea>
+    </div>
+    </form>
+
+    <body>
+    </body>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </html>
